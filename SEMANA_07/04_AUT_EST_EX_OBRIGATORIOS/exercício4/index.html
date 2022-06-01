@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍCIO 4</title>
+</head>
+
+<body>
+    <header>
+        <p>Crie uma página web que permita ao usuário informar a quantidade de pessoas (número inteiro inteiro) e o
+            período (Noturno ou Diurno) e, quando o usuário indicar que deseja que o cálculo seja realizado (pressionar
+            um botão), mostre o total da compra de acordo com as condições abaixo:</p>
+        <p>Se vôo diurno, 200 por pessoa. Se mais do que 50 pessoas, desconto de 40% por pessoa.</p>
+        <p>Se vôo noturno, 100 por pessoa. Se mais do que 50 pessoas, desconto de 20% por pessoa</p>
+
+    </header>
+
+    <section>
+        <p>Qual a quantidade de pessoas? <input type="number" id="pessoas"></p>
+
+        <p>Período:
+            <input type="radio" name="radioper" id="diurno" checked>
+            <label for="diurno">diurno</label>
+            <input type="radio" name="radioper" id="noturno">
+            <label for="noturno">noturno</label>
+        </p>
+
+        <p><button onclick="calcular()">calcular</button></p>
+        <p id="ativar"></p>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
