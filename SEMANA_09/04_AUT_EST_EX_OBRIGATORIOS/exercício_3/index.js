@@ -1,5 +1,5 @@
 function resultado() {
-    var nome = document.querySelector("#pri") + document.querySelector("#seg") + document.querySelector("#ter")
+    var nome = [document.querySelector("#pri").value, document.querySelector("#seg").value, document.querySelector("#ter").value]
     var ordenar = nome.sort((a, b) => {
         return a.localeCompare(b);
     });
